@@ -6,7 +6,7 @@ Module Connection
     Public Sub Connect_to_DB()
         myConnectionString = "server=127.0.0.1;" _
                     & "uid=root;" _
-                    & "pwd=MyNewPass;" _
+                    & "pwd=benny1234;" _
                     & "database=binlayo_db"
 
         Try
