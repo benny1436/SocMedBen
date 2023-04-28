@@ -26,6 +26,7 @@ Public Class DATA_HANDLER
             dgvCsvData.DataSource = dt
         End If
 
+
     End Sub
 
     Private Sub btnBackupDb_Click(sender As Object, e As EventArgs) Handles btnBackupDb.Click
@@ -49,5 +50,9 @@ Public Class DATA_HANDLER
         ElseIf backup.ShowDialog = Windows.Forms.DialogResult.Cancel Then
             Return
         End If
+    End Sub
+
+    Private Sub btnDownloadCsv_Click(sender As Object, e As EventArgs) Handles btnDownloadCsv.Click
+        DOWNLOADPOSTS.Show()
     End Sub
 End Class

@@ -25,6 +25,7 @@ Partial Class DATA_HANDLER
         dgvCsvData = New DataGridView()
         btnUploadCsv = New Button()
         btnBackupDb = New Button()
+        btnDownloadCsv = New Button()
         CType(dgvCsvData, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -48,18 +49,28 @@ Partial Class DATA_HANDLER
         ' 
         ' btnBackupDb
         ' 
-        btnBackupDb.Location = New Point(120, 410)
+        btnBackupDb.Location = New Point(230, 410)
         btnBackupDb.Name = "btnBackupDb"
         btnBackupDb.Size = New Size(110, 23)
         btnBackupDb.TabIndex = 2
         btnBackupDb.Text = "Backup Database"
         btnBackupDb.UseVisualStyleBackColor = True
         ' 
+        ' btnDownloadCsv
+        ' 
+        btnDownloadCsv.Location = New Point(120, 410)
+        btnDownloadCsv.Name = "btnDownloadCsv"
+        btnDownloadCsv.Size = New Size(75, 23)
+        btnDownloadCsv.TabIndex = 3
+        btnDownloadCsv.Text = "Download"
+        btnDownloadCsv.UseVisualStyleBackColor = True
+        ' 
         ' DATA_HANDLER
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(btnDownloadCsv)
         Controls.Add(btnBackupDb)
         Controls.Add(btnUploadCsv)
         Controls.Add(dgvCsvData)
@@ -72,4 +83,5 @@ Partial Class DATA_HANDLER
     Friend WithEvents dgvCsvData As DataGridView
     Friend WithEvents btnUploadCsv As Button
     Friend WithEvents btnBackupDb As Button
+    Friend WithEvents btnDownloadCsv As Button
 End Class
